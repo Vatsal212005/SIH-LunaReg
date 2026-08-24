@@ -1,0 +1,44 @@
+LUNAREG REAL IMAGE SETUP
+========================
+
+The upgrade does NOT include or download any lunar image.
+The website remains visually complete using its built-in lunar scene until you add these files.
+
+Add TWO JPG images to the existing project's public folder with these exact filenames:
+
+1) public/lunar-source.jpg
+   Purpose: Chandrayaan-2 source image shown as the OHRC view.
+   Desired image:
+   - Real grayscale lunar orbital imagery
+   - Preferably Chandrayaan-2 OHRC
+   - Detailed cratered or rugged terrain, ideally Shackleton/polar terrain
+   - Strong low-Sun shadows so the illumination problem is visually obvious
+   - No labels, coordinate grids, borders, logos or watermarks
+   - Landscape crop, ideally 3:2 or 16:10
+   - At least 1800 x 1200 px; 2400 px or higher is ideal
+
+2) public/lunar-reference.jpg
+   Purpose: Lunar reference image shown as the LRO NAC view.
+   Desired image:
+   - Real grayscale LRO NAC lunar imagery
+   - THE SAME OR A CLEARLY OVERLAPPING LUNAR REGION as lunar-source.jpg if possible
+   - Different Sun angle / shadow direction and slightly different scale
+   - No labels, coordinate grids, borders, logos or watermarks
+   - Match the source image's aspect ratio
+   - At least 1800 x 1200 px; 2400 px or higher is ideal
+
+BEST POSSIBLE PAIR
+------------------
+Use two images of the same Shackleton crater rim / lunar south-polar terrain:
+- Source: Chandrayaan-2 OHRC, oblique or low-Sun illumination
+- Reference: LRO NAC, overlapping terrain, visibly different illumination and/or scale
+
+This makes Matches, Overlay, Difference and the How It Works page look convincing because viewers can recognize the same terrain under different imaging conditions.
+
+IMPORTANT
+---------
+Keep the filenames exactly:
+  lunar-source.jpg
+  lunar-reference.jpg
+
+No code changes are needed after adding them. Refresh the website.

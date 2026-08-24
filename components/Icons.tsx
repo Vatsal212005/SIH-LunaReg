@@ -32,3 +32,8 @@ export const ActivityIcon = ({size=18,className=''}:IconProps) => base(<path d="
 export const InfoIcon = ({size=18,className=''}:IconProps) => base(<><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></>,size,className)
 export const MaximizeIcon = ({size=18,className=''}:IconProps) => base(<><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></>,size,className)
 export const MoreIcon = ({size=18,className=''}:IconProps) => base(<><circle cx="5" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1" fill="currentColor" stroke="none"/></>,size,className)
+export const SunIcon = ({size=18,className=''}:IconProps) => base(<><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></>,size,className)
+export const MenuIcon = ({size=18,className=''}:IconProps) => base(<><path d="M4 7h16M4 12h16M4 17h16"/></>,size,className)
+export const XIcon = ({size=18,className=''}:IconProps) => base(<><path d="M5 5l14 14M19 5L5 19"/></>,size,className)
+export const BookOpenIcon = ({size=18,className=''}:IconProps) => base(<><path d="M3 5.5A3.5 3.5 0 0 1 6.5 2H11v17H6.5A3.5 3.5 0 0 0 3 22z"/><path d="M21 5.5A3.5 3.5 0 0 0 17.5 2H13v17h4.5A3.5 3.5 0 0 1 21 22z"/></>,size,className)
+export const CopyIcon = ({size=18,className=''}:IconProps) => base(<><rect x="9" y="9" width="10" height="10" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></>,size,className)
