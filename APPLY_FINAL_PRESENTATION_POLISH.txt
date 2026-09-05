@@ -1,0 +1,50 @@
+LunaReg Final Presentation Polish
+=================================
+
+This is a paste-on-top overlay for the existing LunaReg project.
+
+What it keeps:
+- original polished LunaReg product dashboard
+- real V0.02/V0.03 backend and evidence
+- live SuperPoint + LightGlue CUDA demo
+- recorded validated fallback
+
+What it adds:
+- branded LunaReg lunar splash / launch sequence
+- staggered dashboard and page entrance animations
+- animated metric counters
+- viewer cross-fades
+- cinematic live registration processing screen
+- real pipeline-stage loading sequence
+- registration-complete success reveal using fresh API metrics
+- dynamic fresh VRAM / GPU temperature / inference time
+- clickable SYSTEM READY panel
+- Replay Launch Sequence button
+- friendly backend/fallback wording
+- 10 s backend status timeout
+- 60 s live inference timeout
+- Windows npm.cmd fixes in START and VERIFY scripts
+
+Apply
+-----
+1. Close the currently running LunaReg frontend/backend terminal windows.
+2. Extract this ZIP over:
+   C:\Users\ironm\OneDrive\Desktop\LunaReg_NextJS_Final\LunaReg_Next_Final
+3. Allow overwrite.
+4. Activate:
+   .\backend\.venv\Scripts\Activate.ps1
+5. Verify:
+   powershell -ExecutionPolicy Bypass -File .\scripts\VERIFY-HACKATHON-DEMO.ps1
+6. Start:
+   powershell -ExecutionPolicy Bypass -File .\scripts\START-HACKATHON-DEMO.ps1
+
+For the judge-facing splash:
+- Click SYSTEM READY in the top bar.
+- Click Replay Launch Sequence.
+
+The live processing screen deliberately does not invent exact progress percentages.
+The success metrics come from the actual API response.
+
+Scientific scope remains unchanged:
+- Working: OHRC scientific ingestion, OHRC/LRO common grid, LightGlue, RANSAC, coverage, V0.03 initial robustness.
+- Planned: independent cross-acquisition validation, TMC-2, IIRS, sub-pixel refinement.

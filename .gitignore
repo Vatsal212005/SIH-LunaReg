@@ -20,6 +20,10 @@ backend/data/processed/
 backend/runs/
 backend/backups/
 
+# Local hackathon runtime / backup evidence
+public/demo-runtime/
+demo-backup/
+
 # Large scientific imagery
 *.IMG
 *.img

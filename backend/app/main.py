@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from app.core.registration import RegistrationError, register_images
+from app.demo import router as demo_router
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 RUNS_DIR = BASE_DIR / "runs"
@@ -17,8 +18,8 @@ RUNS_DIR.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(
     title="LunaReg Registration API",
-    version="0.0.1",
-    description="V0.01 baseline lunar image registration engine.",
+    version="0.03-hackathon",
+    description="LunaReg SIH 26166 working prototype API.",
 )
 
 app.add_middleware(
@@ -30,11 +31,12 @@ app.add_middleware(
 )
 
 app.mount("/runs", StaticFiles(directory=str(RUNS_DIR)), name="runs")
+app.include_router(demo_router)
 
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "service": "lunareg-registration", "version": "0.0.1"}
+    return {"status": "ok", "service": "lunareg-registration", "version": "0.03-hackathon"}
 
 
 @app.post("/v1/registrations")
@@ -44,6 +46,7 @@ async def create_registration(
     source_sensor: str = Form("OHRC"),
     reference_sensor: str = Form("LRO NAC"),
 ):
+    # Legacy V0.01 upload endpoint retained for reproducibility.
     run_id = uuid.uuid4().hex[:12]
     run_dir = RUNS_DIR / run_id
     run_dir.mkdir(parents=True, exist_ok=False)

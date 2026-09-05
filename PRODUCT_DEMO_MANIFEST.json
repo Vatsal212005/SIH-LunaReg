@@ -1,0 +1,69 @@
+{
+  "name": "LunaReg Product UI + Real Prototype Backend",
+  "version": "0.03-demo-product",
+  "paste_on_top": true,
+  "purpose": "Internal hackathon working prototype using the original LunaReg product shell",
+  "frontend_entry": "components/LunaRegApp.tsx",
+  "live_endpoint": "POST /v1/demo/lightglue",
+  "status_endpoint": "GET /v1/demo/status",
+  "recorded_fallback": "Validated V0.02 evidence copied locally by PREPARE-HACKATHON-DEMO.ps1",
+  "pages": [
+    "Registration",
+    "Analytics",
+    "Data Catalog",
+    "Run History",
+    "Model Pipeline",
+    "How It Works"
+  ],
+  "scientific_scope": {
+    "implemented": [
+      "OHRC scientific ingestion",
+      "GCP/TPS common-grid georectification",
+      "SuperPoint + LightGlue correspondence",
+      "RANSAC geometric verification",
+      "coverage metrics",
+      "V0.03 initial robustness harness"
+    ],
+    "planned": [
+      "independent cross-acquisition validation",
+      "TMC-2",
+      "IIRS",
+      "sub-pixel refinement"
+    ]
+  },
+  "validation": {
+    "typescript_syntax": "passed",
+    "typescript_contract_check": "passed against demo API types",
+    "python_compile": "passed",
+    "powershell_prefix_check": "passed",
+    "windows_npm_verify_fix": "included",
+    "unsupported_legacy_claim_scan": "passed"
+  },
+  "files": [
+    ".gitignore",
+    "HACKATHON_OVERLAY_MANIFEST.json",
+    "VERSION",
+    "app/hackathon.css",
+    "app/layout.tsx",
+    "app/page.tsx",
+    "app/prototype.css",
+    "backend/app/core/benchmark_v002.py",
+    "backend/app/core/learned_matchers_v002.py",
+    "backend/app/core/thermal_guard.py",
+    "backend/app/demo.py",
+    "backend/app/main.py",
+    "backend/requirements-v002.txt",
+    "components/HackathonDemo.tsx",
+    "components/LunaRegApp.tsx",
+    "docs/HACKATHON_DEMO.md",
+    "docs/HACKATHON_PRESENTATION_NOTES.md",
+    "lib/lunareg-demo.ts",
+    "scripts/CHECK-HACKATHON-DEMO.ps1",
+    "scripts/DEMO-DAY.ps1",
+    "scripts/INSTALL-V0.02.ps1",
+    "scripts/PREPARE-HACKATHON-DEMO.ps1",
+    "scripts/RUN-V0.02.ps1",
+    "scripts/START-HACKATHON-DEMO.ps1",
+    "scripts/VERIFY-HACKATHON-DEMO.ps1"
+  ]
+}

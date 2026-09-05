@@ -1,4 +1,3 @@
-
 param(
     [ValidateSet("all", "sift", "lightglue", "loftr")]
     [string]$Model = "all",

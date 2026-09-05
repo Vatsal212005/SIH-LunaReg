@@ -1,0 +1,13 @@
+LunaReg Product UI + Real Backend Demo
+
+1. Stop the currently running Next.js and FastAPI demo terminals.
+2. Extract this ZIP directly over the LunaReg project root and allow overwrite.
+3. Your scientific data/results are not touched.
+4. Activate backend venv:
+   .\backend\.venv\Scripts\Activate.ps1
+5. Verify:
+   powershell -ExecutionPolicy Bypass -File .\scripts\VERIFY-HACKATHON-DEMO.ps1
+6. Start:
+   powershell -ExecutionPolicy Bypass -File .\scripts\START-HACKATHON-DEMO.ps1
+
+The UI uses the original LunaReg product shell while showing only real live or validated V0.02/V0.03 evidence.
