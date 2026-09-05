@@ -3,6 +3,10 @@
 > **SIH 2026 · Problem Statement 26166 · Theme: Space Technology**
 > **Team Termin8ors**
 
+<p align="center">
+  <img src="docs/images/lunar_reg_hero.jpg" alt="LunaReg Multi-Modal Lunar Image Registration System" width="100%" style="border-radius: 8px;" />
+</p>
+
 LunaReg is an end-to-end lunar image registration platform that solves the challenge of aligning multi-modal, multi-sensor lunar surface imagery captured under varying Sun angles, viewing geometries, and spatial resolutions. The system aligns Chandrayaan-2 OHRC imagery against LRO NAC orthophotos on a verified common lunar map grid using state-of-the-art learned feature correspondence.
 
 ---
@@ -80,6 +84,10 @@ Quality Assessment (residual RMSE + 8×8 spatial coverage)
 ---
 
 ## System Architecture
+
+<p align="center">
+  <img src="docs/images/system_architecture.jpg" alt="LunaReg System Architecture Pipeline" width="100%" style="border-radius: 8px;" />
+</p>
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
@@ -164,6 +172,50 @@ The frontend is a comprehensive, production-grade scientific dashboard built wit
 - 📱 **Responsive design** (desktop, tablet, mobile breakpoints at 1250px, 980px, 650px)
 - 📥 **JSON export** of complete registration reports
 - 🔔 **System status popover** showing engine health
+
+### 📸 Visual Interface Showcase
+
+#### 1. Interactive Dual-Sensor Registration Workspace
+<p align="center">
+  <img src="docs/images/ui_workspace_split.png" alt="Registration Workspace Split View" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);" />
+  <br />
+  <em>Interactive Dual-Sensor Registration Workspace featuring interactive split slider, keypoint detection HUD, and live transformation matrix readouts.</em>
+</p>
+
+#### 2. Multi-Modal Verification & Live Pipeline Execution
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/images/ui_overlay_mode.png" alt="Overlay Blend Inspection Mode" style="border-radius: 6px;" />
+      <br />
+      <strong>Multi-Modal Edge Difference & Overlay Blend</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/images/ui_registration_results.png" alt="Live Registration Results" style="border-radius: 6px;" />
+      <br />
+      <strong>Live Registration Inlier Correspondence Result</strong>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/images/ui_analytics_panel.png" alt="Analytics and Calibration Matrix" style="border-radius: 6px;" />
+      <br />
+      <strong>Deep Analytics, Reprojection Residuals & Spatial Coverage</strong>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/images/ui_model_pipeline.png" alt="Deep Learning Model Pipeline" style="border-radius: 6px;" />
+      <br />
+      <strong>End-to-End SuperPoint + LightGlue Pipeline DAG</strong>
+    </td>
+  </tr>
+</table>
+
+#### 3. Fully Responsive Adaptive Layout
+<p align="center">
+  <img src="docs/images/ui_mobile_view.png" alt="Mobile Responsive Interface" width="360" style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.15);" />
+  <br />
+  <em>Seamless cross-device experience with touch-optimized mobile drawer and stacked analytical cards.</em>
+</p>
 
 ### Image Handling
 The viewer seamlessly handles both live backend assets and local demonstration images. When the backend is unavailable, it displays validated canonical pair imagery stored in `/public/demo-runtime/`.
