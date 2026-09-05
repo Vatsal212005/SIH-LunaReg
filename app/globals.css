@@ -25,7 +25,9 @@
 }
 
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;overflow-x:hidden}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-outfit), var(--font-inter), sans-serif;letter-spacing:-0.02em}
+code,kbd,samp,.mono{font-family:var(--font-mono), Consolas, "Courier New", monospace}
 body{background:
   radial-gradient(900px 520px at 88% -10%,rgba(65,143,190,.09),transparent 70%),
   linear-gradient(180deg,#090c11 0%,#07090d 100%)}
